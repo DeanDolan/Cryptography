@@ -50,11 +50,11 @@ public class AccountGUI extends javax.swing.JFrame {
         registerBtn = new javax.swing.JButton();
         loginBtn = new javax.swing.JButton();
         usernameTf = new javax.swing.JTextField();
-        passwordTf = new javax.swing.JTextField();
         passwordLbl = new javax.swing.JLabel();
         usernameLbl = new javax.swing.JLabel();
         loginLbl = new javax.swing.JLabel();
         notsignedupLbl = new javax.swing.JLabel();
+        passwordTf = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,17 +62,17 @@ public class AccountGUI extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        titleLbl.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        titleLbl.setText("Website Name");
+        titleLbl.setFont(new java.awt.Font("Algerian", 1, 24)); // NOI18N
+        titleLbl.setText("Transactify");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(118, 118, 118)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(titleLbl)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addGap(112, 112, 112))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,19 +115,16 @@ public class AccountGUI extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(passwordTf, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                    .addComponent(usernameTf))
-                .addGap(76, 76, 76))
+                .addGap(64, 138, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(loginLbl)
+                        .addGap(129, 129, 129))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(passwordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(165, 165, 165))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addComponent(usernameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(168, 168, 168)
-                        .addComponent(passwordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(138, 138, 138)
                         .addComponent(notsignedupLbl))
@@ -137,9 +134,15 @@ public class AccountGUI extends javax.swing.JFrame {
                             .addComponent(loginBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(registerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
-                        .addComponent(loginLbl)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(169, 169, 169)
+                        .addComponent(usernameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(97, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(usernameTf, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(passwordTf, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,13 +158,13 @@ public class AccountGUI extends javax.swing.JFrame {
                 .addComponent(passwordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(passwordTf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(loginBtn)
                 .addGap(18, 18, 18)
                 .addComponent(notsignedupLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(registerBtn)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -172,7 +175,7 @@ public class AccountGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -182,13 +185,13 @@ public class AccountGUI extends javax.swing.JFrame {
         String username = usernameTf.getText();
         String password = passwordTf.getText();
 
-        if (username.length() < 6) {
-            JOptionPane.showMessageDialog(this, "Username must be at least 6 characters long.");
+        if (username.length() < 7 || !username.matches(".*\\d.*")) {
+            JOptionPane.showMessageDialog(this, "Username must be at least 7 characters long and contain at least one number.");
             return;
         }
 
         if (!isValidPassword(password)) {
-            JOptionPane.showMessageDialog(this, "Password must be at least 8 characters long and include at least one number and one special character.");
+            JOptionPane.showMessageDialog(this, "Password must be at least 8 characters long, include at least one number and one special character.");
             return;
         }
 
@@ -201,7 +204,7 @@ public class AccountGUI extends javax.swing.JFrame {
                 ResultSet rs = checkUserStmt.executeQuery();
 
                 if (rs.next()) {
-                    JOptionPane.showMessageDialog(this, "Username taken. Try again.");
+                    JOptionPane.showMessageDialog(this, "Username is already taken. Please choose another one.");
                     return;
                 }
             }
@@ -247,7 +250,7 @@ public class AccountGUI extends javax.swing.JFrame {
                 if (rowsAffected > 0) {
                     JOptionPane.showMessageDialog(this, "Registration successful!");
                 } else {
-                    JOptionPane.showMessageDialog(this, "Registration failed.");
+                    JOptionPane.showMessageDialog(this, "Registration failed. Please try again.");
                 }
             }
 
@@ -373,7 +376,7 @@ public class AccountGUI extends javax.swing.JFrame {
     private javax.swing.JLabel loginLbl;
     private javax.swing.JLabel notsignedupLbl;
     private javax.swing.JLabel passwordLbl;
-    private javax.swing.JTextField passwordTf;
+    private javax.swing.JPasswordField passwordTf;
     private javax.swing.JButton registerBtn;
     private javax.swing.JLabel titleLbl;
     private javax.swing.JLabel usernameLbl;
