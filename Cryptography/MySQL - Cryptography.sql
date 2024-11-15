@@ -10,4 +10,8 @@ CREATE TABLE user_information (
     PRIMARY KEY (Username)
 );
 
-
+CREATE TABLE messages (
+    Username VARCHAR(255) NOT NULL,
+    EncryptedMessage TEXT NOT NULL,
+    FOREIGN KEY (Username) REFERENCES user_information(Username)
+);
